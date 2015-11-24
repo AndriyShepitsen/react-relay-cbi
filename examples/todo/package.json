@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run update-schema && babel --stage 1 --plugins ./build/babelRelayPlugin src --out-dir lib && webpack",
+    "build": "npm run update-schema && babel --watch --stage 1 --plugins ./build/babelRelayPlugin src --out-dir lib && webpack",
     "prestart": "npm run build",
     "start": "node ./lib/server.js",
     "update-schema": "babel-node --optional es7.asyncFunctions ./scripts/updateSchema.js"

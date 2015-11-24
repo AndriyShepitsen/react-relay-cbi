@@ -26,8 +26,7 @@
   ],
   "main": "lib/IsomorphicRouter.js",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/denvned/isomorphic-relay-router.git"
+
   },
   "scripts": {
     "build": "babel --stage 1 --optional runtime src --out-dir lib",
